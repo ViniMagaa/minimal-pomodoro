@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>minimal pomodoro timer</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="modes">
+    <button class="button" onclick="setMode(25)">pomodoro</button>
+    <button class="button" onclick="setMode(5)">short pause</button>
+    <button class="button" onclick="setMode(15)">long pause</button>
+  </div>
+  <h1 id="timer">25:00</h1>
+  <div class="controls">
+    <button id="toggleButton" class="button start" onclick="toggleTimer()">start</button>
+    <button onclick="resetTimer()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-rotate-ccw-icon lucide-rotate-ccw">
+        <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+        <path d="M3 3v5h5" />
+      </svg>
+    </button>
+  </div>
+  <button id="fullscreenBtn" onclick="toggleFullScreen()">⛶</button>
+
+  <script src="./script.js"></script>
+
+  <audio id="alarmSound" src="./alarm.mp3" loop></audio>
+</body>
+
+</html>

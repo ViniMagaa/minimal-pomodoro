@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Righteous&family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	background-color: #000;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: "Space Grotesk", Courier, monospace;
+	overflow: hidden;
+}
+
+h1 {
+	font-size: 18rem;
+	line-height: 1;
+	font-weight: 600;
+	user-select: none;
+	font-variant-numeric: tabular-nums;
+	pointer-events: none;
+}
+
+.controls,
+.modes {
+	display: flex;
+	gap: 1rem;
+}
+
+button {
+	padding: 1rem;
+	font-size: 1.2rem;
+	cursor: pointer;
+	background: transparent;
+	color: #fff;
+	border: none;
+	user-select: none;
+	transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out,
+		background-color 0.15s ease-in-out;
+}
+
+button:not(.button):hover {
+	opacity: 0.7;
+}
+
+.button {
+	padding: 0.5rem 1.5rem;
+	border: 1px solid #fff;
+	border-radius: 500px;
+	font-family: "Space Grotesk", sans-serif;
+}
+
+.button:hover {
+	background: #fff;
+	color: #000;
+}
+
+.start {
+	font-size: 1.5rem;
+	font-weight: 500;
+	background: #fff;
+	color: #000;
+}
+
+.start:hover {
+	background: #000;
+	color: #fff;
+}
+
+#fullscreenBtn {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	background: #000;
+	color: #fff;
+}
